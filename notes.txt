@@ -1,0 +1,35 @@
+* Not exposing directly the API feels weird (going through index.php).
+On the other hand with an authentication there is no way to forget as everything goes through index.php.
+
+* Everything going through API makes controller pretty useless.
+With API only we can have a nice all-purpose modal (maybe 2 with the error one) but the JS would be way bigger and trickier.
+
+* Need to implement installation and get rid of table regeneration.
+
+* Need to implement task priority/order.
+
+* After creating/deleting the way to be on the right page could be better
+
+* Really need to change the last_page mechanics (to be tab friendly)
+
+* attribute types :
+	readonly -> only to be read (id, date), the database set/update them automatically
+	fixed -> set at creation then is like readonly
+	string
+	text -> like string but presented with a textarea for multiline texts.
+	password -> if left empty will not be updated (hashed so they cannot retrieve previous value when editing)
+	int
+	float
+	double
+	boolean
+	ReferenceValue -> special case to be able to select from a list of ReferenceValue
+	ReferenceValueAny -> special case to be able to select any ReferenceValue (no parent)
+	Object/* -> Generic multi choice
+
+* SESSION info :
+	user_id
+	user_admin -> boolean
+	logged
+	last_page
+	close_noscript
+	noscript_message_close

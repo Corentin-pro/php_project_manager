@@ -1,0 +1,300 @@
+*
+{
+	box-sizing: border-box;
+}
+*:focus
+{
+	outline: none;
+	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+	transition: box-shadow 0.30s ease-in-out;
+}
+html,body
+{
+	margin: 0;
+}
+a
+{
+	color: inherit;;
+}
+body
+{
+	font-family: sans-serif;
+	font-size: 16px;
+	background: #eee;/*hsl(205, 25%, 90%);*/
+}
+button,input[type="submit"],.button
+{
+	margin: 2px;
+	padding: 0.2rem 0.5rem;
+	cursor: pointer;
+	border-radius: 3px;
+	background-color: rgba(255,255,255,0.8);
+	border: 1px solid hsla(216, 41%, 52%, 0.2);
+	text-decoration: none;
+}
+a.button
+{
+	line-height: 1.6rem;
+}
+button:hover,input[type="submit"]:hover,.button:hover,
+button:focus,input[type="submit"]:focus,.button:focus
+{
+	background: hsla(216, 41%, 92%, 1);
+}
+h1,h2,h3,h4
+{
+	text-align: center;
+	margin: 0.3em 0;
+}
+h1
+{
+	padding: 0.8em;
+	background: #f8f8f8;
+	border-radius: 6px;
+	border: 1px solid hsla(216, 41%, 52%, 0.2);
+}
+img
+{
+	display: inline-block;
+	height: 1rem;
+	vertical-align: middle;
+	filter: opacity(0.7);
+}
+input:not([type="submit"]),textarea
+{
+	margin: 3px 10px;
+	background: #eee;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+}
+main,nav
+{
+	margin: 2px auto;
+	width: 90%;
+}
+nav
+{
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+}
+nav > div
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: baseline;
+}
+nav a
+{
+	margin: 2px;
+	white-space: nowrap;
+}
+pre
+{
+	font-size: 0.7rem;
+	white-space: pre-wrap;
+}
+table
+{
+	margin: 10px auto;
+	width: 100%;
+	border-collapse: collapse;
+	border-radius: 12px;
+}
+textarea
+{
+	font-family: initial;
+	font-size: 0.65em;
+}
+td,th
+{
+	padding: 6px;
+	border-bottom: 1px solid rgba(125,125,125,0.3);
+}
+th
+{
+	color: #e8e8e8;
+	background: hsla(216, 41%, 52%, 0.5);
+}
+.table-main td,th
+{
+	text-align: center;
+}
+.table-view td:last-child
+{
+	text-align: right;
+}
+tr:nth-child(odd)
+{
+	background: rgba(125, 125, 125, 0.1);
+}
+tr:not(:first-child):hover
+{
+	background: rgba(125, 125, 125, 0.3);
+}
+
+
+.card
+{
+	margin: 3px;
+	padding: 3px;
+	display: flex;
+	flex-direction: column;
+	width: calc(50% - 6px);
+	max-width: 300px;
+	min-height: 200px;
+	background-color: rgba(255,255,255,0.8);
+	border-radius: 6px;
+	text-decoration: none;
+	border: 2px solid hsla(216, 41%, 52%, 0.2);
+}
+.card.created
+{
+	background-color: hsla(0, 75%, 75%, 0.3);
+}
+.card.started
+{
+	background-color: hsla(45, 73%, 74%, 0.3);
+}
+.card.finished
+{
+	background-color: hsla(100, 73%, 74%, 0.3);
+}
+.card .actions
+{
+	text-align: center;
+	margin-bottom: 8px;
+}
+.card .detail
+{
+	margin-top: auto;
+}
+.card-container
+{
+	margin: 10px 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.close
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.detail
+{
+	font-size: 0.8rem;
+	text-align: right;
+}
+
+.hidden
+{
+	display: none;
+}
+
+.highlighted
+{
+	font-weight: bold;
+	font-style: italic;
+}
+
+.icon
+{
+	font-size: 1.2rem;
+}
+
+.login-form form
+{
+	position: absolute;
+	top: calc(50% - 100px);
+	left: calc(50% - 10em);
+	margin: 0 auto;
+	padding: 16px;
+	height: 150px;
+	width: 20em;
+	background-color: rgba(125, 125, 125, 0.5);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.logout
+{
+	margin-left: auto;
+}
+
+.more
+{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.noscript-message
+{
+	position: relative;
+	text-align: center;
+	background: rgba(0,0,0,0.1);
+}
+
+.page-navigation
+{
+	text-align: center;
+}
+.page-navigation .selected
+{
+	color: #888;
+	background-color: rgba(255, 255, 255, 0.3);
+	pointer-events: none;
+}
+
+.progress
+{
+	position: relative;
+	text-align: center;
+	margin: 4px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.progress canvas
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.progress span
+{
+	position: relative;
+	z-index: 2;
+}
+.progress-task
+{
+	margin: 10px 0;
+	text-align: center;
+	font-size: 0.9rem;
+}
+
+.table-actions
+{
+	text-align: right;
+}
+
+.table-view input,.table-view select,.table-view textarea
+{
+	width: 100%;
+}
+.table-view textarea
+{
+	height: 2rem;
+}
+.table-view select
+{
+	margin-left: 10px;
+}

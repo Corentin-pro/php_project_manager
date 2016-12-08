@@ -1,0 +1,11 @@
+<main>
+	<h1>Home</h1>
+	<div class="table-actions">
+		<button class="icon" onclick="callAPIInModalWithElement('?api=project&amp;action=form_add', 'modal-action', 'modal-action-content');" title="Add a new project">
+			<img src="public/img/add.svg" alt="Add">
+		</button>
+	</div>
+	<?=$this->printFrontProjects()?>
+</main>
+
+<script src="public/js/progress.js"></script>

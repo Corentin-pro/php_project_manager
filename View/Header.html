@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title><?=$this->title?></title>
+	<link href="public/css/main.css" rel="stylesheet" type="text/css" />
+	<link href="public/css/modal.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div class="modal modal-effect-blur" id="modal-action">
+	<div class="modal-content" id="modal-action-content">
+	</div>
+</div>
+
+<div class="noscript-message<?=$this->noscript_close?>">
+	<noscript>
+		This site is meant to work with javascript. If you have any security concern you can take a quick loot at the very simple and short script used : <a href="public/js/main.js">main.js</a>
+		<a class="close" href="<?=$this->noscript_close_link?>" title="Close this message"><img src="public/img/cancel.svg" alt="Close" /></a>
+	</noscript>
+</div>
+
+<nav class="<?=$this->logout_link_hide?>" role="navigation" aria-label="Main Menu">
+	<div>
+		<a class="button" href="./" title="Go back to home page"><img src="public/img/home.svg" alt="Home" /></a>
+		<?=$this->admin_nav?>
+	</div>
+	<a class="button icon logout" href="?logout" title="Logout"><img src="public/img/logout.svg" alt="Logout"></a>
+</nav>

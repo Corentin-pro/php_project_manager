@@ -1,0 +1,10 @@
+<main>
+	<h1>Users</h1>
+	<a class="button icon" href="./" title="Back to index"><img src="public/img/back.svg" alt="Back"></a>
+	<div class="table-actions">
+		<button class="icon" onclick="callAPIInModalWithElement('?api=user&amp;action=form_add', 'modal-action', 'modal-action-content');" title="Add a new user">
+			<img src="public/img/add.svg" alt="Add">
+		</button>
+	</div>
+	<?=$this->printUserTable()?>
+</main>

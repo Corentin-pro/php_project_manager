@@ -1,0 +1,17 @@
+<div class="modal modal-effect-top<?=($this->error)?' modal-pre-show':''?>" id="modal-error">
+	<div class="modal-content">
+		<h3>Error</h3>
+		<div>
+			<p><?=$this->error?></p>
+			<div class="modal-actions">
+				<button type="button" class="modal-close" onclick="removeModal('modal-error')">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal-overlay"></div>
+<script src="public/js/main.js" async defer></script>
+</body>
+
+</html>

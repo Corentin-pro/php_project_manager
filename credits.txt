@@ -1,0 +1,3 @@
+DatabaseManager\getExceptionTraceAsString : courtesy of Steve (http://stackoverflow.com/users/418819/steve) in the his answer (http://stackoverflow.com/questions/1949345/how-can-i-get-the-full-string-of-php-s-gettraceasstring)
+
+Modal : http://tympanus.net/codrops/2013/06/25/nifty-modal-window-effects/ from Manoela Ilic https://github.com/crnacura

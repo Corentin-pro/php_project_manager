@@ -1,0 +1,10 @@
+<main>
+	<h1><?=$this->parent_project->name?> users</h1>
+	<a class="button icon" href="?section=project_management" title="Back to project"><img src="public/img/back.svg" alt="Back"></a>
+	<div class="table-actions">
+		<button class="icon" onclick="callAPIInModalWithElement( '?api=relation_project_user&amp;action=form_add&amp;project_id=<?=$this->parent_project->id?>', 'modal-action', 'modal-action-content');" title="Add a new task">
+			<img src="public/img/add.svg" alt="Add">
+		</button>
+	</div>
+	<?=$this->printProjectUserTable()?>
+</main>
